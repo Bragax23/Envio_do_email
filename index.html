@@ -1,73 +1,44 @@
-    <div class="container_form">
+    <div class="box-formulario">        
+        
+        <div class="formulario">
+            
+            <div class="title-form">
+              <h1><i class="icon icon-comments-o"></i> Fale Conosco Agora</h1>
+            </div>
 
-            <h1>Formulário de Cadastro</h1>
+            <form action="#" method="post">
+                     
 
-            <form class="form" action="https://formsubmit.co/lucasbragasantos2001@gmail.com " method="post">
-                
-                <div class="form_grupo">
-                    <label for="nome" class="form_label">Nome</label>
-                    <input type="text" name="nome" class="form_input" id="nome" placeholder="Nome" required>
-                </div>
-                
-                <div class="form_grupo">
-                    <label for="e-mail" class="form_label">Email</label>
-                    <input type="email" name="email" class="form_input" id="email" placeholder="seuemail@email.com" required>
-                </div        
+                <span>
+                    <input type="text" class="input-slide" id="nome" name="nome" placeholder="Nome" autocomplete="off" required=""/>
+                    <label for="nome"> <i class="icon icon-user-outline"></i> </label>
+                </span>
 
-                <div class="form_grupo">
-                    
-                    <label for"Profissão" class="text">O que você é?</label>
-                    <select name="Profissão" class="dropdown" required>
-                        
-                        <option selected disabled class="form_select_option" value="">Selecione</option>
-                        <option value="Professor" class="form_select_option">Professor(a)</option>
-                        <option value="Aluno" class="form_select_option">Aluno(a) </option>
-                        <option value="Outro" class="form_select_option">Outro</option>                                      
-                    
-                    </select>
+                <span>
+                    <input type="text" class="input-slide" id="email" name="email" placeholder="E-mail" autocomplete="off" required=""/>
+                    <label for="email"> <i class="icon icon-mail-3"></i> </label>
+                </span>
 
-                </div>
+                <span>
+                    <input type="text" class="input-slide" id="assunto" name="assunto" placeholder="Assunto" autocomplete="off" required=""/>
+                    <label for="assunto"> <i class="icon icon-help"></i> </label>
+                </span>
 
-                <div class="form_grupo">
+                <span>
+                    <textarea type="text" class="textarea-slide" id="mensagem" name="mensagem" rows="3" placeholder="Mensagem" autocomplete="off" required=""></textarea>
+                    <label for="mensagem"> <i class="icon icon-commenting-o"></i> </label>
+                </span>
 
-                    <span class="legenda">Sexo:</span>
-                    
-                    <div class="radio-btn">
-                        <input type="radio" class="form_new_input" id="masculino" name="sexo" value="Masculino" required="required">
-                        <label for="masculino" class="radio_label form_label"> <span class="radio_new_btn"></span> Masculino</label>
-                    </div>
-
-                    <div class="radio-btn">
-                        <input type="radio" class="form_new_input" id="feminino" name="sexo" value="Feminino" required="required">
-                        <label for="feminino" class="radio_label form_label"> <span class="radio_new_btn"></span> Feminino</label>
-                    </div>
+                <div class="box-btn">
+                     
+                    <button type="submit" class="btn-envia zoom-shadow">
+                        <i class="icon icon-export"> Enviar</i>
+                    </button>
 
                 </div>
-              
 
-                <div class="form_grupo">
-
-                    
-
-                    <div class="check-btn">
-                        <input type="checkbox" class="form_new_input" id="wordpress" name="aprender" value="wordpress">
-                        <label for="wordpress" class="form_label check_label"><span class="check_new_btn"></span> WordPress</label>
-                    </div>
-                    
-
-                    <div class="form_message">
-                        
-                        <label for="message" class="form_message_label"> Digite aqui sua sua mensagem:</label>
-                        <textarea name="mensagem" id="message" cols="30" rows="3" class="form_input message_input" required></textarea>
-
-                    </div>
-
-                    <div class="submit">
-
-                      <input type="hidden" name="acao" value="enviar">
-                      <button type="submit" name="Submit" class="submit_btn" >Cadastrar</button>
-                    
-                    </div>
             </form>
 
-    </div><!--container_form--
+        </div>
+
+    </div><!--Box Formulario-->  
